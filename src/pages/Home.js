@@ -1,9 +1,9 @@
+import TopBar from "../components/TopBar";
+
 const Home = () => {
     return (
         <section>
-            <div>
-                <h1 className="text-center text-7xl">Hello Man</h1>
-            </div>
+            <TopBar />
         </section>
     );
 }
