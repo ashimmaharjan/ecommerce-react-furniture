@@ -4,7 +4,7 @@ import DeskImage from '../images/tv-desk.png'
 const HighlightProducts = () => {
     return (
         <section className="mt-10 w-[85%] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <div className="col-span-1 h-64 bg-[#F4F5F7] shadow-sm flex relative overflow-hidden">
                     <div className="absolute w-1/2 h-full top-8">
                         <img src={ChairImage} className='w-[80%] h-full -ml-2 object-contain' alt="highlight-chair-img" />

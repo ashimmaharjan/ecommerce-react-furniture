@@ -15,21 +15,21 @@ const OurProducts = () => {
     const absoluteButtons = "w-full h-full flex items-center justify-center";
     const OurProducts = [
         { id: 1, name: "Buckle Wrap Wooden Table", price: "52.00", image: ProductImage1 },
-        { id: 1, name: "Couch", price: "42.00", image: ProductImage2 },
-        { id: 1, name: "Office Desk", price: "32.00", image: ProductImage3 },
-        { id: 1, name: "Wooden Rocking Chair", price: "22.00", image: ProductImage4 },
-        { id: 1, name: "Work Table", price: "12.00", image: ProductImage5 },
-        { id: 1, name: "Table", price: "22.00", image: ProductImage6 },
-        { id: 1, name: "Antique", price: "32.00", image: ProductImage7 },
-        { id: 1, name: "Armchair", price: "42.00", image: ProductImage8 },
+        { id: 2, name: "Couch", price: "42.00", image: ProductImage2 },
+        { id: 3, name: "Office Desk", price: "32.00", image: ProductImage3 },
+        { id: 4, name: "Wooden Rocking Chair", price: "22.00", image: ProductImage4 },
+        { id: 5, name: "Work Table", price: "12.00", image: ProductImage5 },
+        { id: 6, name: "Table", price: "22.00", image: ProductImage6 },
+        { id: 7, name: "Antique", price: "32.00", image: ProductImage7 },
+        { id: 8, name: "Armchair", price: "42.00", image: ProductImage8 },
     ]
 
 
     return (
-        <section className="mt-20 pb-10">
+        <section className="mt-20">
             {/* Navigation Tabs */}
-            <div className="flex items-center justify-between">
-                <ul className="inline-flex items-center space-x-8 uppercase tracking-wide text-gray-700">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+                <ul className="inline-flex items-center text-sm lg:text-base space-x-4 md:space-x-8 uppercase tracking-wide text-gray-700">
                     <li><a href="" className={tabLinksClass}>Furniture</a></li>
                     <li><a href="" className={tabLinksClass}>Lighting</a></li>
                     <li><a href="" className={tabLinksClass}>Sofas</a></li>
@@ -50,8 +50,8 @@ const OurProducts = () => {
                 {OurProducts.map((product) => (
                     <div className="col-span-1" key={product.id}>
                         {/* Product Image */}
-                        <div className="w-full h-72 bg-[#F5F5F5] flex items-center justify-center relative group transition ease-linear duration-1000">
-                            <img src={product.image} className="w-44 h-44 object-scale-down" alt="" />
+                        <div className="w-full h-44 md:h-52 lg:h-72 bg-[#F5F5F5] flex items-center justify-center relative group transition ease-linear duration-1000">
+                            <img src={product.image} className="w-24 h-24 lg:w-44 lg:h-44 object-scale-down" alt="" />
 
                             {/* Add to card buttons */}
                             <div className="absolute hidden bottom-0 left-[9px] 
@@ -85,11 +85,11 @@ const OurProducts = () => {
             </div>
 
             <div className="flex items-center mt-12">
-                <div className="w-5/12 bg-gray-400 h-[1px]"></div>
-                <div className="w-2/12 flex justify-center">
-                    <button className="border border-gray-700 py-2 px-3 uppercase text-sm hover:bg-gray-700 hover:text-white transition-all duration-300 ease-in-out"> Go to Shop </button>
+                <div className="w-4/12 md:w-5/12 bg-gray-400 h-[1px]"></div>
+                <div className="w-4/12 md:w-2/12 flex justify-center">
+                    <button className="border border-gray-700 py-2 px-3 uppercase text-xs lg:text-sm hover:bg-gray-700 hover:text-white transition-all duration-300 ease-in-out"> Go to Shop </button>
                 </div>
-                <div className="w-5/12 bg-gray-400 h-[1px]"></div>
+                <div className="w-4/12 md:w-5/12 bg-gray-400 h-[1px]"></div>
             </div>
         </section>
     );

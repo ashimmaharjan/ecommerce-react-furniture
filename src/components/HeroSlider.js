@@ -27,8 +27,8 @@ const HeroSlider = () => {
                     {SliderImages.map((sliderImage) => (
                         <div key={sliderImage.photo} className="w-[85%] bg-[#D2E9E3] mx-auto -mt-14">
                             <div className="w-full h-[500px] flex">
-                                <div className="w-1/2 h-full pl-28 pt-28">
-                                    <h6 className="text-4xl text-gray-800"><b>Shopnik.</b> Number #1 Trusted <br />  Furniture Website.
+                                <div className="w-1/2 h-full pl-10 md:pl-28 pt-28">
+                                    <h6 className="text-2xl md:text-4xl text-gray-800"><b>Shopnik.</b> Number #1 Trusted <br />  Furniture Website.
                                     </h6>
 
                                     <p className="mt-5 text-[#EFB948]"> coming soon in your door with a huge discount </p>
