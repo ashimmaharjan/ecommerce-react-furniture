@@ -41,12 +41,12 @@ const NavigationBar = () => {
                     <ul className="inline-flex items-center">
                         <li>
                             <ul className="inline-flex text-sm lg:text-base space-x-5 lg:space-x-10 uppercase mt-2 text-gray-600">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Features</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Projects</a></li>
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">News</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">News</a></li>
                             </ul>
                         </li>
                     </ul>
